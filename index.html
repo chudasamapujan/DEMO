@@ -3,125 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BudgetWise - Statistics & Pay</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>BudgetWise - Smart Budgeting Made Simple</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 font-sans">
-    <!-- Statistics Screen -->
-    <div id="statistics-screen" class="screen">
-        <header class="bg-green-600 text-white p-4 flex justify-between items-center">
-            <button class="text-white">&lt;</button>
-            <span class="text-sm">9:41</span>
-            <span class="text-sm">🌐</span>
-        </header>
-        <div class="p-4">
-            <h1 class="text-2xl font-bold mb-4">Statistics</h1>
-            <p class="text-gray-600 mb-4">November 19, 2020</p>
-            <div class="bg-white rounded-lg shadow p-4 mb-4">
-                <h2 class="text-lg font-semibold">Balance</h2>
-                <div class="w-full h-40 bg-gray-200 rounded-full flex items-center justify-center">
-                    <span class="text-xl font-bold">₦50,789</span>
-                </div>
-                <p class="text-sm text-gray-600 mt-2">Salary, Food & Drink, E-Wallet, Internet, Shopping</p>
-            </div>
-            <div class="grid grid-cols-2 gap-4 mb-4">
-                <div class="bg-white rounded-lg shadow p-4">
-                    <h3 class="text-lg font-semibold">Income</h3>
-                    <p class="text-xl font-bold">₦50,789</p>
-                    <button class="mt-2 bg-green-600 text-white px-4 py-2 rounded">View All</button>
-                </div>
-                <div class="bg-white rounded-lg shadow p-4">
-                    <h3 class="text-lg font-semibold text-red-600">Expense</h3>
-                    <p class="text-xl font-bold">₦10,102</p>
-                    <button class="mt-2 bg-green-600 text-white px-4 py-2 rounded">View All</button>
-                </div>
-            </div>
-            <div class="bg-white rounded-lg shadow p-4">
-                <h3 class="text-lg font-semibold mb-2">Transactions</h3>
-                <div class="flex items-center mb-2">
-                    <img src="salary-icon.png" alt="Salary" class="w-6 h-6 mr-2">
-                    <span>Salary - Aug 22, 2029, 5:05 PM</span>
-                    <span class="ml-auto font-bold">₦12,500</span>
-                </div>
-                <div class="flex items-center">
-                    <img src="deposit-icon.png" alt="Deposit" class="w-6 h-6 mr-2">
-                    <span>Deposit - Aug 22, 2029, 3:05 PM</span>
-                    <span class="ml-auto font-bold">₦500</span>
-                </div>
-                <button class="mt-2 bg-green-600 text-white px-4 py-2 rounded">View All</button>
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">BudgetWise</h1>
+            <div class="space-x-4">
+                <a href="#" class="hover:underline">Home</a>
+                <a href="#" class="hover:underline">Features</a>
+                <a href="#" class="hover:underline">Login</a>
+                <a href="#" class="hover:underline">Sign Up</a>
             </div>
         </div>
-        <nav class="bg-white fixed bottom-0 w-full p-2 flex justify-around border-t border-gray-200">
-            <button class="text-gray-600">Home</button>
-            <button class="text-green-600">Statistics</button>
-            <button class="text-green-600">Pay</button>
-            <button class="text-gray-600">My Card</button>
-            <button class="text-gray-600">Profile</button>
-        </nav>
-    </div>
+    </nav>
 
-    <!-- Pay Screen -->
-    <div id="pay-screen" class="screen hidden">
-        <header class="bg-green-600 text-white p-4 flex justify-between items-center">
-            <button class="text-white">&lt;</button>
-            <span class="text-sm">9:41</span>
-            <span class="text-sm">🌐</span>
-        </header>
-        <div class="p-4">
-            <h1 class="text-2xl font-bold mb-4">Pay</h1>
-            <div class="bg-white rounded-lg shadow p-4 mb-4">
-                <h2 class="text-lg font-semibold">Current Balance</h2>
-                <p class="text-2xl font-bold">₦50,789</p>
-            </div>
-            <div class="bg-white rounded-lg shadow p-4 mb-4">
-                <h3 class="text-lg font-semibold mb-2">Nearby Friends</h3>
-                <div class="flex items-center mb-2">
-                    <img src="avatar1.png" alt="Viraj" class="w-10 h-10 rounded-full mr-2">
-                    <span>Viraj</span>
+    <!-- Hero Section -->
+    <section class="bg-blue-500 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Take Control of Your Finances</h2>
+            <p class="text-lg mb-6">Track expenses, save smarter, and master your budget with AI-driven insights.</p>
+            <button class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-12">Why BudgetWise?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: Emotional Spending Alerts -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-2">Emotional Spending Alerts</h4>
+                    <p class="text-gray-600">Get real-time notifications to curb impulsive purchases.</p>
                 </div>
-                <div class="flex items-center mb-2">
-                    <img src="avatar2.png" alt="Shane" class="w-10 h-10 rounded-full mr-2">
-                    <span>Shane</span>
+                <!-- Feature 2: Offline Tracking -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-2">Offline Tracking</h4>
+                    <p class="text-gray-600">Log expenses anywhere, even without internet access.</p>
                 </div>
-                <div class="flex items-center mb-2">
-                    <img src="avatar3.png" alt="Eduardo" class="w-10 h-10 rounded-full mr-2">
-                    <span>Eduardo</span>
+                <!-- Feature 3: Gamification -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-2">Gamified Savings</h4>
+                    <p class="text-gray-600">Earn badges and rewards for hitting financial goals.</p>
                 </div>
-                <div class="flex items-center mb-2">
-                    <img src="avatar4.png" alt="Angel" class="w-10 h-10 rounded-full mr-2">
-                    <span>Angel</span>
-                </div>
-                <button class="mt-2 bg-green-600 text-white px-4 py-2 rounded">Add New</button>
-            </div>
-            <div class="grid grid-cols-2 gap-4">
-                <button class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                    <img src="send-money-icon.png" alt="Send Money" class="w-8 h-8 mb-2">
-                    <span>Send Money</span>
-                </button>
-                <button class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                    <img src="pay-bill-icon.png" alt="Pay Bill" class="w-8 h-8 mb-2">
-                    <span>Pay Bill</span>
-                </button>
-                <button class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                    <img src="payment-icon.png" alt="Payment" class="w-8 h-8 mb-2">
-                    <span>Payment</span>
-                </button>
-                <button class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                    <img src="recharge-icon.png" alt="Recharge" class="w-8 h-8 mb-2">
-                    <span>Recharge</span>
-                </button>
             </div>
         </div>
-        <nav class="bg-white fixed bottom-0 w-full p-2 flex justify-around border-t border-gray-200">
-            <button class="text-gray-600">Home</button>
-            <button class="text-gray-600">Statistics</button>
-            <button class="text-green-600">Pay</button>
-            <button class="text-gray-600">My Card</button>
-            <button class="text-gray-600">Profile</button>
-        </nav>
+    </section>
+
+    <!-- Accessibility Toggle (Dark Mode Example) -->
+    <div class="fixed bottom-4 right-4">
+        <button id="darkModeToggle" class="bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-gray-900">Toggle Dark Mode</button>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 BudgetWise. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Basic Dark Mode Script -->
+    <script>
+        const toggleButton = document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('bg-gray-900');
+            document.body.classList.toggle('text-white');
+            document.querySelectorAll('.bg-white').forEach(el => el.classList.toggle('bg-gray-800'));
+            document.querySelectorAll('.text-gray-600').forEach(el => el.classList.toggle('text-gray-300'));
+        });
+    </script>
 </body>
 </html>
